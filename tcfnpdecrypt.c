@@ -88,7 +88,7 @@ int main(int argc, char *argv[]) {
 
 void usage(void) {
  printf("Name/Password decryption for MS SMS TCF files\nCoded by Harry Basalamah 01/2007\n\n");
- printf("Usage: tcf_np_decrypt <encrypted name or password> <key> <0 || 1>\n%");
+ printf("Usage: tcfnpdecrypt <encrypted name or password> <key> <0 || 1>\n%");
  printf("Use '0' to indicate you want to decode a name, '1' for password\n");
  exit(1);
 }
