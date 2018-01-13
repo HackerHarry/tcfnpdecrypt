@@ -70,7 +70,7 @@ int main(int argc, char *argv[]) {
 /* determine decrypted code length */
  len = NorPtable[0] ^ argv[2][0];
  if (action)
-  len = len ^ 0xA2;
+  len ^= 0xA2;
 
  if (len > 39) /* we'll abort if len > 39 chars (might happen if user mixes */
   exit(1);     /* up the last parameter) */ 
